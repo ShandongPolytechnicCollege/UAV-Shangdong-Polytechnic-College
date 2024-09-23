@@ -7,7 +7,7 @@ Aerial Tracing Drone
 2、Description of the project：
 
 （1） Project Goal and main functions
-Design a drone that can conduct fixed-speed and fixed-distance tracking of specified items or people, such as moving people, moving cars, moving bottles or other characteristic items, and can be electrically activated.
+Design a drone that can conduct fixed-speed and fixed-distance tracking of specified items or people, such as moving people、 moving cars、moving bottles or other characteristic items.
 
 （2）Problem-solving
 
