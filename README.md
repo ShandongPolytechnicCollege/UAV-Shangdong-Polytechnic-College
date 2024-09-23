@@ -1,3 +1,5 @@
+Module A：Planning
+
 1、Project name
 Aerial Tracing Drone
 
@@ -6,11 +8,10 @@ Aerial Tracing Drone
 Design a drone that can conduct fixed-speed and fixed-distance tracking of specified items or people, such as moving people, moving cars, moving bottles or other characteristic items, and can be electrically activated.
 
 （2）Problem-solving: 
-1. In terms of filming television shows and films, the drone may carefully track the target and shoot from various angles and heights, giving the viewer a distinctive viewpoint, when filming pursuit scenes, sporting events, and other dynamic photos.
-2. In terms of police force, UAV can carry out the locating and tracing of offenders. The drone can patrol and monitor the target area in the air, and once suspicious people, vehicles or abnormal situations are found, it can quickly track the target and transmit images and data in real time, providing timely intelligence support for security personnel.
-3. In unmanned monitoring warehouses, drones can track the storage location and handling process of goods, realize efficient management and monitoring of inventory, discover abnormalities in goods in time, and improve the accuracy and safety of warehouse management.
-4. In ecological research, drones can track the trajectory of wildlife activities and habitat changes, providing technical means for wildlife conservation and ecological environment monitoring.
-
+①. In terms of filming television shows and films, the drone may carefully track the target and shoot from various angles and heights, giving the viewer a distinctive viewpoint, when filming pursuit scenes, sporting events, and other dynamic photos.
+②. In terms of police force, UAV can carry out the locating and tracing of offenders. The drone can patrol and monitor the target area in the air, and once suspicious people, vehicles or abnormal situations are found, it can quickly track the target and transmit images and data in real time, providing timely intelligence support for security personnel.
+③. In unmanned monitoring warehouses, drones can track the storage location and handling process of goods, realize efficient management and monitoring of inventory, discover abnormalities in goods in time, and improve the accuracy and safety of warehouse management.
+④. In ecological research, drones can track the trajectory of wildlife activities and habitat changes, providing technical means for wildlife conservation and ecological environment monitoring.
 
 3、Team Member Roles
 https://github.com/ShandongPolytechnicCollege/UAV-Shangdong-Polytechnic-College/blob/Default/planning/Team%20Member%20Roles.xlsx
