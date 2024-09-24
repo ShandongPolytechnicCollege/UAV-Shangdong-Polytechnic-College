@@ -29,4 +29,4 @@ https://github.com/ShandongPolytechnicCollege/UAV-Shangdong-Polytechnic-College/
 
 4、Task table：
 
-https://github.com/ShandongPolytechnicCollege/UAV-Shangdong-Polytechnic-College/blob/Default/planning/Task%20table.xlsx
+https://docs.google.com/spreadsheets/d/1OUgiSKqgZxpxTMeCvz2PsQL1_l-LMhZCKUdn9P04Nu0/edit?usp=sharing
