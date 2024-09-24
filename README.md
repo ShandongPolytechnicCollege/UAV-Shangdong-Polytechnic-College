@@ -25,7 +25,7 @@ Photography enthusiasts、The police、Ecological environmental protection perso
 
 3、Team Member Roles：
 
-https://github.com/ShandongPolytechnicCollege/UAV-Shangdong-Polytechnic-College/blob/Default/planning/Team%20Member%20Roles.xlsx
+https://docs.google.com/spreadsheets/d/1g6ejtgRI5j7i-3au5Pnyne2VOCJzEArVMI719h2ykD8/edit?usp=sharing
 
 4、Task table：
 
