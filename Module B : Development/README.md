@@ -1,3 +1,7 @@
+Sep.24 ，2024  
+
+Amout of work done
+
 1、multi-objects recognization
 
 https://drive.google.com/file/d/1qWPvrqS9HtCBfVAlBjI7367xcDgd-BsD/view?usp=sharing
