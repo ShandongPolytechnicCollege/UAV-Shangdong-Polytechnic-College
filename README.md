@@ -132,13 +132,13 @@ Use machine learning to improve UAV recognition of multi-target objects
 
 
 <p align="center">
-    <img width="900" src="xianshi，zhuixiaoche" />
+    <img width="900" src="https://github.com/ShandongPolytechnicCollege/UAV-Shangdong-Polytechnic-College/blob/Default/Module%20C%EF%BC%9ADebugging/Real%20Fligt/%E8%BF%BD%E8%B8%AA%E5%B0%8F%E8%BD%A6.gif" />
 </p>
 
 Shooting Angle
 
 <p align="center">
-<img width="900" src="yolo,zhuixiaoche" />
+<img width="900" src="https://github.com/ShandongPolytechnicCollege/UAV-Shangdong-Polytechnic-College/blob/Default/Module%20C%EF%BC%9ADebugging/Real%20Fligt/%E8%BF%BD%E5%B0%8F%E8%BD%A6%E5%A4%96%E5%BD%95.gif" />
 </p>
 
 Drone View
