@@ -80,7 +80,7 @@ The Swarm in Blocks can be programmed either with the blocks interface or direct
 </p>
 
 <p align="center">
-    <img width="900" src="" />
+    <img width="900" src="https://github.com/ShandongPolytechnicCollege/UAV-Shangdong-Polytechnic-College/blob/Default/Module%20C%EF%BC%9ADebugging/Real%20Fligt/UAV%20spotting%20flight.gif" />
 </p>
 
 Use computer vision & optical flow system to
