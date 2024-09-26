@@ -90,7 +90,7 @@ current point.
 </p>
 
 <p align="center">
-    <img width="900" src="ego" />
+    <img width="900" src="https://github.com/ShandongPolytechnicCollege/UAV-Shangdong-Polytechnic-College/blob/Default/Module%20C%EF%BC%9ADebugging/Real%20Fligt/EGO%E7%AE%97%E6%B3%95.gif" />
 </p>
 
 Planning algorithm for the Ego-Planner path:
