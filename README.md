@@ -120,11 +120,11 @@ RViz
 
 
 <p align="center">
-    <img width="900" src="xiangzi" />
+    <img width="900" src="https://github.com/ShandongPolytechnicCollege/UAV-Shangdong-Polytechnic-College/blob/Default/Module%20C%EF%BC%9ADebugging/Real%20Fligt/%E5%A4%9A%E7%9B%AE%E6%A0%87.gif" />
 </p>
 
 <p align="center">
-    <img width="900" src="duomubiao" />
+    <img width="900" src="https://github.com/ShandongPolytechnicCollege/UAV-Shangdong-Polytechnic-College/blob/Default/Module%20C%EF%BC%9ADebugging/Real%20Fligt/%E8%AF%86%E5%88%AB%E7%AE%B1%E5%AD%90.gif" />
 </p>
 
 Use machine learning to improve UAV recognition of multi-target objects
