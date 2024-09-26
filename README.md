@@ -129,6 +129,16 @@ RViz
 
 Use machine learning to improve UAV recognition of multi-target objects
 
+<p align="center">
+    <img width="900" src="https://github.com/ShandongPolytechnicCollege/UAV-Shangdong-Polytechnic-College/blob/Default/Module%20C%EF%BC%9ADebugging/Real%20Fligt/gazebo.gif" />
+</p>
+
+Gazebo simulation：
+（1）Multi-object recognition
+（2）Click to lock，keep the
+target in the center of the
+screen
+
 
 
 <p align="center">
