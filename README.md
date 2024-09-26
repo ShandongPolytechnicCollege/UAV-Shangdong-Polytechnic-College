@@ -16,7 +16,22 @@
 
 Name: Li Xiang
 Role：Software engineer & Pilot
-Responsibilities：Write code for autonomous fligt、multi-objects recognition system、autonomous tracking system and obstacle avoidance system，UAV flight & maintenance。
+Responsibilities：Write code for autonomous fligt、multi-objects 
+recognition system、autonomous tracking system and obstacle avoidance system，
+UAV flight & maintenance。
+
+Name: Yin Zhihao
+Role：Software engineer & Team caption
+Responsibilities：Computer vision algorithm & Path planning
+algorithm，data analysis & visualization，machine learning。
+
+
+Name: Cao Li
+Role：Technical engineer & Translator
+Responsibilities：Design propeller protection，test the
+function of sensors，organize the team’s work on github。
+
+
 
 ---
 
