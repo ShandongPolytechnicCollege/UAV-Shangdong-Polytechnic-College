@@ -29,3 +29,7 @@ https://docs.google.com/spreadsheets/d/1g6ejtgRI5j7i-3au5Pnyne2VOCJzEArVMI719h2y
 4、Task table：
 
 https://docs.google.com/spreadsheets/d/1OUgiSKqgZxpxTMeCvz2PsQL1_l-LMhZCKUdn9P04Nu0/edit?usp=sharing
+
+5、task:
+
+https://github.com/ShandongPolytechnicCollege/UAV-Shangdong-Polytechnic-College/blob/Default/Module%20A%20%3A%20Planning/AerialRobotic20240926-English.pdf
