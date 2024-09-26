@@ -108,7 +108,7 @@ Visual obstacle avoidance
 
 
 <p align="center">
-    <img width="900" src="3dkeshihua" />
+    <img width="900" src="https://github.com/ShandongPolytechnicCollege/UAV-Shangdong-Polytechnic-College/blob/Default/Module%20C%EF%BC%9ADebugging/Real%20Fligt/RViz.gif" />
 </p>
 
 3D visualization tools in the ROS framework
