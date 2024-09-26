@@ -134,8 +134,8 @@ Use machine learning to improve UAV recognition of multi-target objects
 </p>
 
 Gazebo simulation：
-（1）Multi-object recognition
-（2）Click to lock，keep the
+  - （1）Multi-object recognition
+  - （2）Click to lock，keep the
 target in the center of the
 screen
 
