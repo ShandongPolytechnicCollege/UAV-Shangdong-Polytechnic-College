@@ -20,7 +20,7 @@ Responsibilities：Write code for autonomous fligt、multi-objects
 recognition system、autonomous tracking system and obstacle avoidance system，
 UAV flight & maintenance。
 
-- Name: Yin Zhihao
+ - Name: Yin Zhihao
 Role：Software engineer & Team caption
 Responsibilities：Computer vision algorithm & Path planning
 algorithm，data analysis & visualization，machine learning。
