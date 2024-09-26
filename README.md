@@ -100,7 +100,7 @@ trajectory depending on the collision that pushesthe
 trajectory away from the obstacle.
 
 <p align="center">
-    <img width="900" src="xianshi" />
+    <img width="900" src="https://github.com/ShandongPolytechnicCollege/UAV-Shangdong-Polytechnic-College/blob/Default/Module%20C%EF%BC%9ADebugging/Real%20Fligt/%E9%81%BF%E9%9A%9C%E6%A2%AF%E5%AD%90%20(2).gif" />
 </p>
 
 Visual obstacle avoidance
