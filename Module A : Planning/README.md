@@ -32,4 +32,4 @@ https://docs.google.com/spreadsheets/d/1OUgiSKqgZxpxTMeCvz2PsQL1_l-LMhZCKUdn9P04
 
 5、task:
 
-https://github.com/ShandongPolytechnicCollege/UAV-Shangdong-Polytechnic-College/blob/Default/Module%20A%20%3A%20Planning/AerialRobotic20240926-English.pdf
+https://github.com/ShandongPolytechnicCollege/UAV-Shangdong-Polytechnic-College/blob/Default/AerialRobotic20240926-English.pdf
