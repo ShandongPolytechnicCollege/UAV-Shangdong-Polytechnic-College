@@ -86,7 +86,7 @@ control and keep the UAV flying steadily at the
 current point.
 
 <p align="center">
-    <img width="900" src="zhengtu" />
+    <img width="900" src="https://github.com/ShandongPolytechnicCollege/UAV-Shangdong-Polytechnic-College/blob/Default/Module%20C%EF%BC%9ADebugging/Real%20Fligt/Picture/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%885.png" />
 </p>
 
 <p align="center">
