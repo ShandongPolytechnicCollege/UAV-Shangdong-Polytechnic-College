@@ -5,8 +5,8 @@
 #include <ros/ros.h>
 #include <spirecv_msgs/TargetsInFrame.h>
 #include <spirecv_msgs/Target.h>
-#include <spirecv_msgs/ROI.h>
-#include <spirecv_msgs/Control.h>
+#include <opencv_msgs/ROI.h>
+#include <opencv_msgs/Control.h>
 #include <image_transport/image_transport.h>
 #include <cv_bridge/cv_bridge.h>
 
@@ -35,7 +35,7 @@ ros::Publisher spirecv_msg_pub;
 
 // 实现框选逻辑的回调函数
 void onMouse(int event, int x, int y, int, void *);
-void remoteMouse(spirecv_msgs::Control ctl_msg);
+void remoteMouse(opencv_msgs::Control ctl_msg);
 
 void cameraCallback(const sensor_msgs::ImageConstPtr &msg)
 {
@@ -97,9 +97,9 @@ int main(int argc, char *argv[])
   image_transport::ImageTransport it(nh);
   image_transport::Subscriber image_subscriber;
   image_subscriber = it.subscribe(input_image_topic, 10, cameraCallback);
-  ros::Publisher spirecv_msg_pub = nh.advertise<spirecv_msgs::TargetsInFrame>("/uav" + std::to_string(uav_id) + "/spirecv/car_detection_with_tracking", 1);
+  ros::Publisher opencv_msg_pub = nh.advertise<spirecv_msgs::TargetsInFrame>("/uav" + std::to_string(uav_id) + "/opencv/car_detection_with_tracking", 1);
 
-  ros::Subscriber spirecv_ctl_sub = nh.subscribe("/uav" + std::to_string(uav_id) + "/spirecv/control", 10, remoteMouse);
+  ros::Subscriber spirecv_ctl_sub = nh.subscribe("/uav" + std::to_string(uav_id) + "/opencv/control", 10, remoteMouse);
 
   aruco_pub = it.advertise(output_image_topic.c_str(), 1);
 
@@ -157,7 +157,7 @@ int main(int argc, char *argv[])
         // 可视化检测结果，叠加到img上
         sv::drawTargetsInFrame(img, tgts);
 
-        spirecv_msgs::TargetsInFrame ros_tgts;
+        opencv_msgs::TargetsInFrame ros_tgts;
         ros_tgts.header.frame_id = "frame";
         ros_tgts.header.stamp = ros::Time::now();
         ros_tgts.header.seq = 1;
@@ -177,7 +177,7 @@ int main(int argc, char *argv[])
 
         for (int i = 0; i < tgts.targets.size(); i++)
         {
-          spirecv_msgs::Target ros_target;
+          opencv_msgs::Target ros_target;
           ros_target.cx = tgts.targets[i].cx;
           ros_target.cy = tgts.targets[i].cy;
           ros_target.w = tgts.targets[i].w;
@@ -234,11 +234,11 @@ int main(int argc, char *argv[])
             // std::cout << rect_sel << std::endl;
             b_renew_ROI = true;
             frame_id = 0;
-            printf("spirecv mode is tracked!\n");
+            printf("opencv mode is tracked!\n");
           }
           else
           {
-            printf("spirecv mode is detection!\n");
+            printf("opencv mode is detection!\n");
           }
         }
         spirecv_msg_pub.publish(ros_tgts);
@@ -289,7 +289,7 @@ int main(int argc, char *argv[])
           printf("  FOV (fx, fy) = (%.2f, %.2f)\n", tgts.fov_x, tgts.fov_y);
           if (tgts.targets.size() > 0)
           {
-            spirecv_msgs::Target ros_target;
+            opencv_msgs::Target ros_target;
             ros_target.cx = tgts.targets[0].cx;
             ros_target.cy = tgts.targets[0].cy;
             ros_target.w = tgts.targets[0].w;
@@ -316,7 +316,7 @@ int main(int argc, char *argv[])
           printf("  Tracking Position = (x, y, z) = (%.3f, %.3f, %.3f)\n", tgts.targets[0].px, tgts.targets[0].py, tgts.targets[0].pz);
 
           }
-          spirecv_msg_pub.publish(ros_tgts);
+          opencv_msg_pub.publish(ros_tgts);
         }
       }
 
@@ -377,7 +377,7 @@ void remoteMouse(spirecv_msgs::Control ctl_msg)
     pt_origin = cv::Point(ctl_msg.x * img_width, ctl_msg.y * img_height);
   }
 
-  else if (ctl_msg.mouse == spirecv_msgs::Control::MOUSE_RIGHT)
+  else if (ctl_msg.mouse == opencv_msgs::Control::MOUSE_RIGHT)
   {
     detect_tracking = true;
     b_renew_ROI = false;
