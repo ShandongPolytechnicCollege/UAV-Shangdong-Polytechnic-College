@@ -83,9 +83,9 @@ The Swarm in Blocks can be programmed either with the blocks interface or direct
     <img width="900" src="https://github.com/ShandongPolytechnicCollege/UAV-Shangdong-Polytechnic-College/blob/Default/Module%20C%EF%BC%9ADebugging/Real%20Fligt/UAV%20spotting%20flight.gif" />
 </p>
 
-Use computer vision & optical flow system to
+  - Use computer vision & optical flow system to
 localize the UAV.
-During the manual test, release the remote
+  - During the manual test, release the remote
 control and keep the UAV flying steadily at the
 current point.
 
@@ -97,8 +97,8 @@ current point.
     <img width="900" src="https://github.com/ShandongPolytechnicCollege/UAV-Shangdong-Polytechnic-College/blob/Default/Module%20C%EF%BC%9ADebugging/Real%20Fligt/EGO%E7%AE%97%E6%B3%95.gif" />
 </p>
 
-Planning algorithm for the Ego-Planner path:
-When a trajectory collides with an obstacle during
+  - Planning algorithm for the Ego-Planner path:
+  - When a trajectory collides with an obstacle during
 the optimisation process, a force is generated on the
 trajectory depending on the collision that pushesthe
 trajectory away from the obstacle.
@@ -131,13 +131,13 @@ RViz
     <img width="900" src="https://github.com/ShandongPolytechnicCollege/UAV-Shangdong-Polytechnic-College/blob/Default/Module%20C%EF%BC%9ADebugging/Real%20Fligt/%E5%A4%9A%E7%9B%AE%E6%A0%87.gif" />
 </p>
 
-Use machine learning to improve UAV recognition of multi-target objects
+  - Use machine learning to improve UAV recognition of multi-target objects
 
 <p align="center">
     <img width="900" src="https://github.com/ShandongPolytechnicCollege/UAV-Shangdong-Polytechnic-College/blob/Default/Module%20C%EF%BC%9ADebugging/Real%20Fligt/gazebo.gif" />
 </p>
 
-Gazebo simulation：
+  - Gazebo simulation：
   - （1）Multi-object recognition
   - （2）Click to lock，keep the
 target in the center of the
@@ -149,19 +149,19 @@ screen
     <img width="900" src="https://github.com/ShandongPolytechnicCollege/UAV-Shangdong-Polytechnic-College/blob/Default/Module%20C%EF%BC%9ADebugging/Real%20Fligt/%E8%BF%BD%E8%B8%AA%E5%B0%8F%E8%BD%A6.gif" />
 </p>
 
-Shooting Angle
+  - Shooting Angle
 
 <p align="center">
 <img width="900" src="https://github.com/ShandongPolytechnicCollege/UAV-Shangdong-Polytechnic-College/blob/Default/Module%20C%EF%BC%9ADebugging/Real%20Fligt/%E8%BF%BD%E5%B0%8F%E8%BD%A6%E5%A4%96%E5%BD%95.gif" />
 </p>
 
-Drone View
+  - Drone View
 
 
 
-Target tracking in the Yolov5 model can be achieved by using the prediction frame's position data and confidence
-level.Use yolov5 algorithm to detect objects in the image, assign a unique ID to each object, and then perform target
-object locking to track the target at a fixed distance and speed, and keep the target in the center of the screen at all times.
+  - Use yolov5 algorithm to detect objects in the image, assign a unique ID to each
+object, and then perform target object locking to track the target at a fixed distance and
+speed, and keep the target in the center of the scr
 
 ---
 
