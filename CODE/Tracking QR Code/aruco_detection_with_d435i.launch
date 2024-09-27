@@ -1,10 +1,10 @@
 <launch>
-    <node pkg="spirecv_ros" type="aruco_detection_with_d435i" name="aruco_detection_with_d435i" output="screen">
+    <node pkg="opencv_ros" type="aruco_detection_with_d435i" name="aruco_detection_with_d435i" output="screen">
         <param name="uav_id" type="int" value="1" />
         <param name="camera_parameters" type="string" value="$(find spirecv_ros)/camera_params/calib_gazebo_640x480.yaml" />
         <param name="local_saving_path" type="string" value="$(find spirecv_ros)" />
 	<param name="input_image_topic" type="string" value="/camera/color/image_raw" />
-	<param name="output_image_topic" type="string" value="/spirecv/camera/rgb/image_aruco_detection_det" />
+	<param name="output_image_topic" type="string" value="/opencv/camera/rgb/image_aruco_detection_det" />
     </node>
 </launch>
 
