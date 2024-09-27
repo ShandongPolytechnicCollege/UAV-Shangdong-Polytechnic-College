@@ -176,7 +176,7 @@ speed, and keep the target in the center of the scr
 
 ## Collaborative team
 
-Aerial Tracking Drone Project Shandong Vocational and Technical College (2024) Team:
+  - Aerial Tracking Drone Project Shandong Vocational and Technical College (2024) Team:
 
 <p align="center">
     <img width="900" src="https://github.com/ShandongPolytechnicCollege/UAV-Shangdong-Polytechnic-College/blob/Default/Module%20C%EF%BC%9ADebugging/Real%20Fligt/mmexport1727382963450.jpg" />
