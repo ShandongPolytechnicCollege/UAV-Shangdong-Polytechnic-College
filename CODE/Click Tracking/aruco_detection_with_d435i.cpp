@@ -3,10 +3,10 @@
 // 包含SpireCV SDK头文件
 #include <sv_world.h>
 #include <ros/ros.h>
-#include <spirecv_msgs/TargetsInFrame.h>
-#include <spirecv_msgs/Target.h>
-#include <spirecv_msgs/ROI.h>
-#include <spirecv_msgs/Control.h>
+#include <opencv_msgs/TargetsInFrame.h>
+#include <opencv_msgs/Target.h>
+#include <opencv_msgs/ROI.h>
+#include <opencv_msgs/Control.h>
 #include <image_transport/image_transport.h>
 #include <cv_bridge/cv_bridge.h>
 
@@ -95,11 +95,11 @@ int main(int argc, char *argv[])
   image_transport::ImageTransport it(nh);
   image_transport::Subscriber image_subscriber;
   image_subscriber = it.subscribe(input_image_topic, 10, cameraCallback);
-  ros::Publisher spirecv_msg_pub = nh.advertise<spirecv_msgs::TargetsInFrame>("/uav" + std::to_string(uav_id) + "/spirecv/aruco_detection_with_d435i", 1);
+  ros::Publisher opencv_msg_pub = nh.advertise<spirecv_msgs::TargetsInFrame>("/uav" + std::to_string(uav_id) + "/opencv/aruco_detection_with_d435i", 1);
 
   aruco_pub = it.advertise(output_image_topic.c_str(), 1);
 
-  ros::Subscriber spirecv_ctl_sub = nh.subscribe("/uav" + std::to_string(uav_id) + "/spirecv/control", 10, remoteMouse);
+  ros::Subscriber spirecv_ctl_sub = nh.subscribe("/uav" + std::to_string(uav_id) + "/opencv/control", 10, remoteMouse);
 
   // 定义一个新的窗口，可在上面进行框选操作
   cv::namedWindow(RGB_WINDOW);
@@ -146,7 +146,7 @@ int main(int argc, char *argv[])
         // 可视化检测结果，叠加到img上
         sv::drawTargetsInFrame(img, tgts);
 
-        spirecv_msgs::TargetsInFrame ros_tgts;
+        opencv_msgs::TargetsInFrame ros_tgts;
         ros_tgts.header.frame_id = "frame";
         ros_tgts.header.stamp = ros::Time::now();
         ros_tgts.header.seq = 1;
@@ -166,7 +166,7 @@ int main(int argc, char *argv[])
 
         for (int i = 0; i < tgts.targets.size(); i++)
         {
-          spirecv_msgs::Target ros_target;
+          opencv_msgs::Target ros_target;
           ros_target.cx = tgts.targets[i].cx;
           ros_target.cy = tgts.targets[i].cy;
           ros_target.w = tgts.targets[i].w;
@@ -229,14 +229,14 @@ int main(int argc, char *argv[])
             aruco_tracked_id = tgts.targets[i].tracked_id;
             b_renew_ROI = true;
             frame_id = 0;
-            printf("spirecv mode is tracked!\n");
+            printf("opencv mode is tracked!\n");
           }
           else
           {
-            printf("spirecv mode is detection!\n");
+            printf("opencv mode is detection!\n");
           }
         }
-        spirecv_msg_pub.publish(ros_tgts);
+        opencv_msg_pub.publish(ros_tgts);
       }
       else
       {
@@ -266,7 +266,7 @@ int main(int argc, char *argv[])
           // 可视化检测结果，叠加到img上
           sv::drawTargetsInFrame(img, tgts, aruco_tracked_id);
 
-          spirecv_msgs::TargetsInFrame ros_tgts;
+          opencv_msgs::TargetsInFrame ros_tgts;
           ros_tgts.header.frame_id = "frame";
           ros_tgts.header.stamp = ros::Time::now();
           ros_tgts.header.seq = 1;
@@ -287,7 +287,7 @@ int main(int argc, char *argv[])
           {
             if (tgts.targets[i].category_id == aruco_tracked_id)
             {
-              spirecv_msgs::Target ros_target;
+              opencv_msgs::Target ros_target;
               ros_target.cx = tgts.targets[i].cx;
               ros_target.cy = tgts.targets[i].cy;
               ros_target.w = tgts.targets[i].w;
@@ -328,7 +328,7 @@ int main(int argc, char *argv[])
               printf("  Object Position = (x, y, z) = (%.3f, %.3f, %.3f)\n", tgts.targets[i].px, tgts.targets[i].py, tgts.targets[i].pz);
             }
           }
-          spirecv_msg_pub.publish(ros_tgts);
+          opencv_msg_pub.publish(ros_tgts);
         }
       }
 
