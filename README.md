@@ -62,7 +62,7 @@ Drones can be useful in areas like large supermarkets 、museums and unmanned mo
 ## Project solution[![](https://raw.githubusercontent.com/aregtech/areg-sdk/master/docs/img/pin.svg)](#Usage-modes)
 
 
-The Swarm in Blocks can be programmed either with the blocks interface or directly in Python and we developed three main launch modes, each one focused on a different application of the project, they are:
+  - The Swarm in Blocks can be programmed either with the blocks interface or directly in Python and we developed three main launch modes, each one focused on a different application of the project, they are:
 
 <p align="center">
     <img width="900" src="https://github.com/BRICSCN/3289457574/blob/main/12/tupian/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.png" />
